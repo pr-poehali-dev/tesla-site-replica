@@ -11,40 +11,57 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-black text-white font-sans">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-sm">
+      <nav className="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-md border-b border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="text-2xl font-bold">TESLA</div>
-            <div className="hidden md:flex space-x-8">
-              <a href="#" className="hover:text-gray-300 transition-colors">
-                Model S
+            <div className="text-3xl font-bold tracking-wider">TESLA</div>
+            <div className="hidden lg:flex items-center space-x-12">
+              <a
+                href="#models"
+                className="text-sm font-medium hover:text-red-500 transition-colors duration-300"
+              >
+                Модели
               </a>
-              <a href="#" className="hover:text-gray-300 transition-colors">
-                Model 3
+              <a
+                href="#energy"
+                className="text-sm font-medium hover:text-red-500 transition-colors duration-300"
+              >
+                Энергия
               </a>
-              <a href="#" className="hover:text-gray-300 transition-colors">
-                Model X
+              <a
+                href="#charging"
+                className="text-sm font-medium hover:text-red-500 transition-colors duration-300"
+              >
+                Зарядка
               </a>
-              <a href="#" className="hover:text-gray-300 transition-colors">
-                Model Y
-              </a>
-              <a href="#" className="hover:text-gray-300 transition-colors">
-                Solar Roof
-              </a>
-              <a href="#" className="hover:text-gray-300 transition-colors">
-                Solar Panels
+              <a
+                href="#about"
+                className="text-sm font-medium hover:text-red-500 transition-colors duration-300"
+              >
+                О компании
               </a>
             </div>
-            <div className="hidden md:flex space-x-4">
-              <Button variant="ghost" className="text-white hover:bg-white/10">
-                Поддержка
+            <div className="flex items-center space-x-3">
+              <Button
+                variant="ghost"
+                size="sm"
+                className="hidden md:flex text-white hover:bg-white/10 font-medium"
+              >
+                Войти
               </Button>
-              <Button variant="ghost" className="text-white hover:bg-white/10">
-                Магазин
+              <Button
+                size="sm"
+                className="bg-red-600 hover:bg-red-700 text-white font-medium px-6 transition-all duration-300 hover:scale-105"
+              >
+                Заказать
               </Button>
-              <Button variant="ghost" className="text-white hover:bg-white/10">
-                Аккаунт
-              </Button>
+              <button className="lg:hidden p-2 hover:bg-white/10 rounded-md transition-colors">
+                <div className="w-6 h-6 flex flex-col justify-center items-center space-y-1">
+                  <span className="block w-6 h-0.5 bg-white"></span>
+                  <span className="block w-6 h-0.5 bg-white"></span>
+                  <span className="block w-6 h-0.5 bg-white"></span>
+                </div>
+              </button>
             </div>
           </div>
         </div>
